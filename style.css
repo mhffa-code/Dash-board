@@ -739,7 +739,7 @@ aside .exchange-mobile {
 
 @media (max-width: 676px) {
     .acc-balances ul li {
-        padding: 7px;
+        padding: 4px 7px;
         font-size: 11px;
     }
     .acc-balances .info {
