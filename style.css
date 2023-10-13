@@ -735,6 +735,7 @@ aside .exchange-mobile {
 
 .acc-balances .info > span i {
     margin-right: 4px;
+    font-size: 13px;
 }
 
 @media (max-width: 676px) {
@@ -747,7 +748,7 @@ aside .exchange-mobile {
         width: fit-content;
     }
     .acc-balances .info > span {
-        font-size: 14px;
+        font-size: 13px;
         margin-bottom: 4px;
     }
     .acc-details .heading {
