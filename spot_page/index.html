@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="webfonts/all.min.css">
+    <link rel="stylesheet" href="../webfonts/all.min.css">
     <title>dashboard</title>
 </head>
 <body>
@@ -93,7 +93,7 @@
         </div>
         <div class="right">
                 <div class="left">
-                    <img src="IMG_20231009_172543_034.jpg" alt="">
+                    <img src="images/IMG_20231009_172543_034.jpg" alt="">
                     <div class="exchange">
                         <span class="active">Exchange</span>
                         <span>Web3</span>
@@ -112,7 +112,7 @@
                 </li>
                 <li class="profile">
                         <i class="fa-solid fa-angle-down"></i>
-                        <img src="profile-1.jpg" alt="">
+                        <img src="images/profile-1.jpg" alt="">
                 </li>
                 <li class="bars">
                     <i class="fa-solid fa-bars bars"></i>
@@ -138,7 +138,7 @@
             </ul>
             <!-- mobile menu -->
                 <div class="mobile-menu">
-                        <img src="profile-1.jpg" alt="">
+                        <img src="images/profile-1.jpg" alt="">
                         <ul class="icons">
                             <li>
                                 <i class="fa-solid fa-bell"></i>
@@ -252,14 +252,14 @@
                     <li class="sub">
                         <a href="#0"><span><i class="fa-solid fa-address-card"></i> Classic Account</span> <i class= "fa-solid fa-angle-down"></i></a>
                         <ul class="sub-menu">
-                            <li><a href="#0"><img src="SpotAccount.svg" alt=""> Spot</a></li>
-                            <li><a href="#0"><img src="MarginAccount.svg" alt=""> Isolated Margin</a></li>
-                            <li><a href="#0"><img src="OptionAccount.svg" alt=""> Futures</a></li>
-                            <li><a href="#0"><img src="cbbc.svg" alt=""> Copy Treading</a></li>
-                            <li><a href="#0"><img src="ContractAccount.svg" alt=""> Warrabt & CBBC</a></li>
-                            <li><a href="#0"><img src="FinancialAccount.svg" alt=""> Financial</a></li>
-                            <li><a href="#0"><img src="OptionAccount.svg" alt=""> Options</a></li>
-                            <li><a href="#0"><img src="PaymentAccount.svg" alt=""> Payment</a></li>
+                            <li><a href="#0"><img src="images/SpotAccount.svg" alt=""> Spot</a></li>
+                            <li><a href="#0"><img src="images/MarginAccount.svg" alt=""> Isolated Margin</a></li>
+                            <li><a href="#0"><img src="images/OptionAccount.svg" alt=""> Futures</a></li>
+                            <li><a href="#0"><img src="images/cbbc.svg" alt=""> Copy Treading</a></li>
+                            <li><a href="#0"><img src="images/ContractAccount.svg" alt=""> Warrabt & CBBC</a></li>
+                            <li><a href="#0"><img src="images/FinancialAccount.svg" alt=""> Financial</a></li>
+                            <li><a href="#0"><img src="images/OptionAccount.svg" alt=""> Options</a></li>
+                            <li><a href="#0"><img src="images/PaymentAccount.svg" alt=""> Payment</a></li>
                         </ul>
                     </li>
                     <li><i class="fa-solid fa-credit-card"></i><a href="#0">Transaction History</a></li>
@@ -273,172 +273,46 @@
                 </div>
         </aside>
         <!-- sidbar -->
-        <!-- content -->
         <div class="content">
             <div class="overview">
-                <h3>
-                    Funds Overview
-                    <i class="fa-solid fa-eye"></i>
-                </h3>
-                <ul class="btns">
-                    <li class="active">Buy Crypto</li>
+                <h3>Spot Account <i class="fa-solid fa-eye"></i></h3>
+                <ul>
+                    <li>Buy Crypto</li>
                     <li>Deposit</li>
+                    <li>Flat Withdraw</li>
                     <li>Withdraw</li>
                     <li>Transfer</li>
                     <li>Push Transfer</li>
                 </ul>
             </div>
             <div class="usd-info">
-                <div class="left">
+                <div class="box">
                     <i class="icon fa-solid fa-dollar"></i>
                     <div class="info">
-                        <p class="head">Total Assets Value</p>
-                        <div class="balance"><span class="num">0</span><span>USD</span></div>
+                        <p class="head">Spot Assets</p>
+                        <div class="balance"><span class="num">0.003</span><span>USD</span></div>
                         <p>≈ <span>0.00000</span> BTC </p>
                     </div>
                 </div>
-                <div class="right">
+                <div class="box">
+                    <i class="icon fa-solid fa-dollar"></i>
+                    <div class="info">
+                        <p class="head">Cumulative PNL</p>
+                        <div class="balance"><span class="num">-166.83</span><span>USD</span></div>
+                        <p>≈ <span>0.00495</span> BTC </p>
+                    </div>
+                </div>
+                <div class="box">
                     <i class="icon fa-solid fa-dollar"></i>
                     <div class="info">
                         <p class="head">Today's PNL</p>
-                        <div class="balance"><span class="num">0</span><span>USD</span></div>
+                        <div class="balance"><span class="num">0.00</span><span>USD</span></div>
                             <p>≈ <span>0.00000</span> BTC</p>
-                        <a href="#0"><i class="fa-solid fa-share"></i>  Share Poster</a>
-                    </div>
-                </div>
-            </div>
-            <div class="acc-details">
-                <div class="heading">
-                    <h3>Classic Account</h3>
-                    <div class="hide-input">
-                        <input type="checkbox" name="" id="hide">
-                        <label for="hide">Hide assets with a zero balance</label>
-                    </div>
-                </div>
-                <div class="acc-balances">
-                    <div class="info">
-                        <span><i class="fa-solid fa-circle-dollar-to-slot"></i>Spot</span>
-                        <div class="balance"><span class="num">0.000 </span><span>USD</span></div>
-                    </div>
-                    <ul class="btns">
-                        <li>Deposit</li>
-                        <li>Withdrow</li>
-                        <li>Trade</li>
-                    </ul>
-                </div>
-                <div class="acc-balances">
-                    <div class="info">
-                        <span><i class="fa-solid fa-chart-line"></i>Isolated Margin</span>
-                        <div class="balance"><span class="num">0.000 </span><span>USD</span></div>
-                    </div>
-                    <ul class="btns">
-                        <li>Transfer</li>
-                        <li>Trade</li>
-                    </ul>
-                </div>
-                <div class="acc-balances">
-                    <div class="info">
-                        <span><i class="fa-solid fa-book"></i>Futures</span>
-                        <div class="balance"><span class="num">0.000 </span><span>USD</span></div>
-                    </div>
-                    <ul class="btns">
-                        <li>Transfer</li>
-                        <li>Trade</li>
-                    </ul>
-                </div>
-                <div class="acc-balances">
-                    <div class="info">
-                        <span><i class="fa-solid fa-file-invoice"></i>Copy Treading</span>
-                        <div class="balance"><span class="num">0.000 </span><span>USD</span></div>
-                    </div>
-                    <ul class="btns">
-                        <li>Strategy Bot</li>
-                        <li>Copy Trading</li>
-                    </ul>
-                </div>
-                <div class="acc-balances">
-                    <div class="info">
-                        <span><i class="fa-solid fa-arrow-up-short-wide"></i>Warrant & CBBC</span>
-                        <div class="balance"><span class="num">0.000 </span><span>USD</span></div>
-                    </div>
-                    <ul class="btns">
-                        <li>Transfer</li>
-                        <li>Trade</li>
-                    </ul>
-                </div>
-                <div class="acc-balances">
-                    <div class="info">
-                        <span><i class="fa-solid fa-coins"></i>Financial</span>
-                        <div class="balance"><span class="num">0.000 </span><span>USD</span></div>
-                    </div>
-                    <ul class="btns">
-                        <li>Earn</li>
-                    </ul>
-                </div>
-            </div>
-        </div> 
-        <!-- content -->
-        <!-- profile -->
-        <div class="profile">
-            <div class="heading">
-                <h3>Profile</h3>
-                <a href="#0">More <i class="fa-solid fa-angle-right"></i></a>
-            </div>
-            <div class="acc-info">
-                <img src="profile-1.jpg" alt="">
-                <h3 class="email">Khaledoff9090@gmail.com</h3>
-                <div class="acc-balance">
-                    <div class="detail">
-                        <p>30-Day Volume :</p>
-                        <div class="balance"><span class="num">0.000 </span><span>BTC</span></div>
-                    </div>
-                    <div class="detail">
-                        <p>VIP Volume :</p>
-                        <div class="balance"><span class="num">0.000 </span><span>BTC</span></div>
-                    </div>
-                    <div class="detail">
-                        <p>14-Days Volume :</p>
-                        <div class="balance"><span class="num">0 </span><span>GT</span></div>
-                    </div>
-                </div>
-                <button>Tier Scheme <i class="fa-solid fa-exclamation"></i></button>
-            </div>
-            <div class="AnnounCements">
-                <div class="heading">
-                    <h3>AnnounCements</h3>
-                    <a href="#0">More <i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div class="notifications">
-                    <div class="row">
-                        <p class="message">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <span class="time">3 hours 18 min ago</span>
-                    </div>
-                    <div class="row">
-                        <p class="message">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <span class="time">3 hours 18 min ago</span>
-                    </div>
-                    <div class="row">
-                        <p class="message">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <span class="time">3 hours 18 min ago</span>
-                    </div>
-                    <div class="row">
-                        <p class="message">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <span class="time">3 hours 18 min ago</span>
-                    </div>
-                    <div class="row">
-                        <p class="message">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <span class="time">3 hours 18 min ago</span>
-                    </div>
-                    <div class="row">
-                        <p class="message">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <span class="time">3 hours 18 min ago</span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- profile -->
-    </main>
-    <!-- main -->
+    </main> 
     <script src="main.js"></script>
-</body>
-</html>
+</body>        
+</html>       
