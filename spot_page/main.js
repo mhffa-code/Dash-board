@@ -59,8 +59,8 @@ sideBarLis.forEach((li) => {
 
 });
 // sub-menu
-const sub = document.querySelector(".sub > a");
-let sub_menu = document.querySelector(".sub-menu");
+const sub = document.querySelector("aside .sub > a");
+let sub_menu = document.querySelector("aside .sub-menu");
 
 sub.addEventListener("click", () => {
     sub_menu.classList.toggle("active");

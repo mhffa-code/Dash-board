@@ -125,12 +125,192 @@ header > .left
     z-index: 1000;
 }
 
+
+header > .left .sub .sub-menu {
+    display: none;
+    position: absolute;
+    background-color:var(--background-color);
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px var(--background-color2);
+}
+
+header > .left .sub .sub-menu ul {
+    width: calc(100% / 3);
+}
+
+
+header > .left .sub:hover .sub-menu {
+    display: flex;
+}
+
+header > .left .sub-menu .exchange li a {
+    padding:15px 50px 15px 10px;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+header > .left .sub-menu .exchange li:hover {
+    background-color: var(--background-color2);
+}
+
+header > .left .sub-menu .exchange li a img {
+    margin-right: 5px;
+    width: 20px;
+}
+
+header > .left .sub-menu .exchange li h3 {
+    font-size: 16px;
+    color: var(--color2);
+    margin-bottom: 10px;
+}
+
+header > .left .sub-menu .exchange li a span {
+    color: #777;
+}
+
+
+header > .left .sub-menu .exchange > h3 {
+    color: #606880;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.two {
+    right: 0;
+}
+/* buy crypto */
+
+header > .left .sub2 .sub-menu {
+    display: none;
+    position: absolute;
+    box-shadow: 1px 1px 4px 3px var(--background-color2);
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+header > .left .sub2:hover .sub-menu {
+    display: block;
+}
+
+
+header > .left .sub2 .sub-menu li a {
+    padding: 15px 90px 15px 10px ;
+        display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+header > .left .sub2 .sub-menu  li:hover {
+    background-color: var(--background-color2);
+}
+
+header > .left .sub2 .sub-menu  li a img {
+    margin-right: 5px;
+    width: 20px;
+}
+
+header > .left .sub2 .sub-menu  li h3 {
+    font-size: 16px;
+    color: var(--color2);
+    margin-bottom: 10px;
+}
+
+header > .left .sub2 .sub-menu  li a span {
+    color: #777;
+}
+
+
+header > .left .sub2 .sub-menu > h3 {
+    color: #606880;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+/*  */
+
+header > .right .sub2 
+{
+    position: relative;
+}
+
+header > .right .sub2 > a {
+    color: var(--color2);
+    padding: 30px 0;
+}
+
+header > .right .sub2:hover > a {
+    color: var(--main-color);
+}
+
+header > .right .sub2 .sub-menu {
+    display: none;
+    top: 60px;
+    left: -60px;
+    white-space: nowrap;
+    position: absolute;
+    box-shadow: 1px 1px 1px 1px var(--background-color2);
+    background-color: var(--background-color);
+}
+
+header > .right .sub2:hover .sub-menu {
+    display: block;
+}
+
+header > .right .sub2 .sub-menu li {
+    margin-right: 0;
+    display: flex;
+}
+
+header > .right .sub2 .sub-menu li a {
+    padding: 15px 50px ;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    color: var(--color2);
+}
+
+header > .right .sub2 .sub-menu  li:hover {
+    background-color: var(--background-color2);
+}
+
+header > .right .sub2 .sub-menu  li a img {
+    margin-right: 5px;
+    width: 20px;
+}
+
+header > .right .sub2 .sub-menu  li h3 {
+    font-size: 16px;
+    color: var(--color2);
+    margin-bottom: 10px;
+}
+
+header > .right .sub2 .sub-menu  li a span {
+    color: #777;
+}
+
+
+header > .right .sub2 .sub-menu > h3 {
+    color: #606880;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+/*  */
+
 header .left .left-linkes{
     display: flex;
     align-items: center;
 }
 
-header .left .left-linkes a
+header .left .left-linkes a:not(.sub-menu a)
 {
     padding: 10px 14px;
     font-size: 13px;
@@ -197,7 +377,7 @@ header .right
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 header .right .left
@@ -633,16 +813,21 @@ aside .exchange-mobile {
     }
 }
 
+.main {
+    padding: 20px;
+    background-color: var(--background-color);
+    margin-top: 30px;
+}
+
 .content .usd-info {
     display: flex;
-    margin-top: 30px;
 
 }
 .content .usd-info .box {
     height: 150px;
     color: var(--color2);
     width: calc(49%);
-    background-color: var(--background-color);
+    background-color: var(--background-color2);
     padding: 20px 30px;
     border-radius: 10px;
     display: flex;
@@ -698,4 +883,272 @@ aside .exchange-mobile {
 
 .btc {
     margin-left: 5px;
+}
+
+.content .coins {
+    background-color: var(--background-color);
+}
+
+.content .coins .inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+
+
+.content .coins .inputs .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.content .coins .inputs .search {
+    position: relative;
+    color: var(--color2);
+}
+
+.content .coins .inputs .search input {
+    width: 200px;
+    padding: 12px 30px;
+    border: 1px solid rgba(119, 119, 119, 0.568);
+    border-radius: 5px;
+    color: var(--color2);
+    background-color: var(--background-color);
+}
+
+.content .coins .inputs .search input:focus {
+    outline: none;
+}
+
+.content .coins .inputs .search i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: rgba(119, 119, 119, 0.568);
+}
+
+.content .coins .inputs .hide {
+    margin: 0 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: var(--color2);
+}
+
+.content .coins .inputs .hide input {
+    margin-right: 3px;
+}
+
+.content .coins .inputs .left > a {
+    color: var(--main-color);
+    text-decoration:underline;
+    font-size: 14px;
+}
+
+
+.content .coins .inputs .right {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: var(--color2);
+    white-space: nowrap;
+}
+
+.content .coins .inputs .right i {
+    margin-right: 3px;
+}
+
+@media(max-width: 991px) 
+{
+    .content .coins .inputs .left {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    
+    .content .coins .inputs .search input {
+        width: 150px;
+    }
+    .content .coins .inputs .hide {
+        margin: 10px 0;
+        font-size: 11px;
+    }
+    .content .coins .inputs .left > a {
+        font-size: 11px;
+    }
+    .content .coins .inputs .right {
+        font-size: 11px;
+    }
+}
+
+.content .coins .table {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+}
+
+@media (max-width: 991px) {
+    .content .coins .table {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.content .coins .table .left {
+    overflow-x: scroll;
+    border-right: 4px solid #9e9e9e40;
+}
+
+.content .coins .table .left .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color2);
+    border-radius: 6px;
+    width: fit-content;
+    padding: 0 15px;
+}
+.content .coins .table .left .heading .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 0;
+    color: #777;
+    font-size: 12px;
+    width: 160px;
+}
+.content .coins .table .left .heading .title span {
+    white-space: nowrap;
+}
+.content .coins .table .left .heading .icons {
+    margin-left: 8px;
+}
+.content .coins .table .left .heading .icons i {
+    display: block;
+    cursor: pointer;
+}
+
+.content .coins .table .left .table-cont {
+    width: fit-content;
+}
+
+.content .coins .table .left .table-cont .row {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .coins .table .left .table-cont .row:not(:last-child) {
+    border-bottom: 1px solid rgba(119, 119, 119, 0.137);
+}
+
+.content .coins .table .left .table-cont .row .coin {
+    display: flex;
+    align-items: center;
+}
+.content .coins .table .left .table-cont .row > h3 , 
+.content .coins .table .left .table-cont .row > div {
+    padding: 15px 0;
+    white-space: nowrap;
+    width: 160px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content .coins .table .left .table-cont .row > div .balance {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .coins .table .left .table-cont .row > div .balance span {
+    color: rgba(119, 119, 119, 0.774);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.content .coins .table .left .table-cont .row .coin img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.content .coins .table .left .table-cont .row h3:not(.coin h3) {
+    font-size: 16px;
+    color: #606880;
+}
+
+.content .coins .table .left .table-cont .row .coin h3 {
+    color: var(--color2);
+}
+.content .coins .table .left .table-cont .row .coin .coin-name span {
+    font-size: 12px;
+    color: rgba(119, 119, 119, 0.774);
+}
+
+.content .coins .table .right {
+    width: 100%;
+}
+
+.content .coins .table .right .heading {
+    padding: 0 15px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color2);
+}
+
+.content .coins .table .right .heading h3 {
+    font-size: 12px;
+    color: #777;
+}
+
+.content .coins .table .right .table-cont {
+    width: 100%;
+}
+
+.content .coins .table .right .row {
+    padding: 0 10px;
+    height: 91px;
+}
+
+.content .coins .table .right .row:not(:last-child) {
+    border-bottom: 1px solid rgba(119, 119, 119, 0.137);
+}
+
+.content .coins .table .right .row ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content .coins .table .right .row ul li {
+    white-space: nowrap;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 10px;
+}
+@media (max-width: 991px) {
+    .content .coins .table .right .row ul {
+        flex-wrap: wrap;
+    }
+    .content .coins .table .right .row ul li {
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+
+.content .coins .table-cont .row:hover {
+    background-color: var(--background-color3);
 }
