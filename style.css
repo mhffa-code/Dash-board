@@ -306,7 +306,7 @@ header .right ul.right-linkes li.search-mobile {
 /* header */
 main {
     display: grid;
-    grid-template-columns: 22% 2fr 20%;
+    grid-template-columns: 300px 2fr 20%;
 }
 
 /* sidbar */
@@ -677,17 +677,17 @@ aside .exchange-mobile {
 .content .usd-info {
     display: flex;
     margin-top: 30px;
+    background-color: var(--background-color);
 
 }
 .content .usd-info .left, .content .usd-info .right {
     color: var(--color2);
     width: calc(49%);
-    background-color: var(--background-color);
     padding: 20px 30px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 @media (max-width: 676px) {
     .content .usd-info {
