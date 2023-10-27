@@ -21,30 +21,6 @@ profileLi.addEventListener("click", () => {
 
 });
 
-// serach
-const search = document.querySelector("header form");
-const searchIcon = document.querySelector("header .search");
-const SearchCloseIcon = document.querySelector("form i.right-icon");
-const searchIconMobil = document.querySelector("header .search-mobile");
-let temp;
-
-if (window.innerWidth > 992)
-    temp = searchIcon;
-else 
-    temp = searchIconMobil;
-
-   
-temp.addEventListener("click", () => {
-
-    search.classList.add("active");
-    document.querySelector("header form input").focus();
-});
-
-SearchCloseIcon.addEventListener("click", () => {
-
-    search.classList.remove("active");
-
-});
 // lis of side bar (active loop)
 const sideBarLis = Array.from(document.querySelectorAll("aside ul li"));
 

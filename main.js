@@ -21,30 +21,6 @@ profileLi.addEventListener("click", () => {
 
 });
 
-// serach
-const search = document.querySelector("header form");
-const searchIcon = document.querySelector("header .search");
-const SearchCloseIcon = document.querySelector("form i.right-icon");
-const searchIconMobil = document.querySelector("header .search-mobile");
-let temp;
-
-if (window.innerWidth > 992)
-    temp = searchIcon;
-else 
-    temp = searchIconMobil;
-
-   
-temp.addEventListener("click", () => {
-
-    search.classList.add("active");
-    document.querySelector("header form input").focus();
-});
-
-SearchCloseIcon.addEventListener("click", () => {
-
-    search.classList.remove("active");
-
-});
 // lis of side bar (active loop)
 const sideBarLis = Array.from(document.querySelectorAll("aside ul li"));
 
@@ -59,8 +35,8 @@ sideBarLis.forEach((li) => {
 
 });
 // sub-menu
-const sub = document.querySelector(".sub > a");
-let sub_menu = document.querySelector(".sub-menu");
+const sub = document.querySelector("aside .sub > a");
+let sub_menu = document.querySelector("aside .sub-menu");
 
 sub.addEventListener("click", () => {
     sub_menu.classList.toggle("active");
@@ -113,21 +89,6 @@ pageMoodIcons.forEach((icon) => {
     
 });
 
-// AnnounCements
-const messages = document.querySelectorAll(".AnnounCements .message");
-
-messages.forEach((message) => {
-    if (innerWidth > 1280)
-    {
-        overflowHidden(message, 35);
-    }else if (innerWidth <= 1280 && innerWidth > 1024) {
-        overflowHidden(message, 25);
-    }else if (innerWidth <= 1024 && innerWidth > 992) {
-        overflowHidden(message, 22);
-    }else {
-        overflowHidden(message, 45);
-    }
-});
 // hide with zero balance
 const balances = Array.from(document.querySelectorAll(".acc-balances .balance .num"));
 const hideBox = document.querySelector(".hide-input input");

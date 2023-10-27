@@ -34,316 +34,22 @@ a {
 
 body
 {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--background-color2);
-    overflow-x: hidden;
+    overflow-x: scroll;
+    width: fit-content;
 }
 /* global */
 
-/* header */
-header 
-{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background-color);
-    position: relative;
-}
 
 /* search input */
-form {
-    visibility: hidden;
-    position: absolute;
-    top: 79px;
-    right: 0;
-    width: 100%;
-    height: 70px;
-}
-form .container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-form.active {
-    visibility: visible;
-}
-form input {
-    background-color: var(--background-color);
-    position: absolute;
-    width: 100%;
-    height: 70px;
-    border: none;
-    padding: 0 130px 0 90px;
-    caret-color: var(--main-color);
-    color: var(--color2);
-}
-
-form i {
-    position: absolute;
-    top: -42px;
-    color: #777;
-    cursor: pointer;
-}
-form i.right-icon {
-    right: 60px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-form i.left-icon {
-    top: 50%;
-    transform: translateY(-50%);
-    left: 60px;
-}
-form input:focus {
-    outline: none;
-}
-
-@media (max-width: 991px) { 
-    form {
-        height: 60px;
-        top: 60px;
-    }
-    form input {
-        padding: 0 80px 0 80px;
-        height: 60px;
-    }
-    form i.right-icon{
-        right: 20px;
-    }
-    form i.left-icon {
-        left: 50px;
-    }
-} 
-
-/* search input */
-
-header > .left 
-{
-    display: flex;
-    justify-content: center;
-    background-color: var(--background-color3);
-    padding: 20px 20px;
-    z-index: 1000;
-}
-
-
-header > .left .sub .sub-menu {
-    display: none;
-    position: absolute;
-    background-color:var(--background-color);
-    justify-content: space-between;
-    padding: 20px;
-    box-shadow: 1px 1px 1px 1px var(--background-color2);
-}
-
-header > .left .sub .sub-menu ul {
-    width: calc(100% / 3);
-}
-
-
-header > .left .sub:hover .sub-menu {
-    display: flex;
-}
-
-header > .left .sub-menu .exchange li a {
-    padding:15px 50px 15px 10px;
-    display: flex;
-    align-items: flex-start;
-
-}
-
-header > .left .sub-menu .exchange li:hover {
-    background-color: var(--background-color2);
-}
-
-header > .left .sub-menu .exchange li a img {
-    margin-right: 5px;
-    width: 20px;
-}
-
-header > .left .sub-menu .exchange li h3 {
-    font-size: 16px;
-    color: var(--color2);
-    margin-bottom: 10px;
-}
-
-header > .left .sub-menu .exchange li a span {
-    color: #777;
-}
-
-
-header > .left .sub-menu .exchange > h3 {
-    color: #606880;
-    font-size: 14px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-}
-
-.two {
-    right: 0;
-}
-/* buy crypto */
-
-header > .left .sub2 .sub-menu {
-    display: none;
-    position: absolute;
-    box-shadow: 1px 1px 4px 3px var(--background-color2);
-    background-color: var(--background-color);
-    padding: 20px;
-}
-
-header > .left .sub2:hover .sub-menu {
-    display: block;
-}
-
-
-header > .left .sub2 .sub-menu li a {
-    padding: 15px 90px 15px 10px ;
-        display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-header > .left .sub2 .sub-menu  li:hover {
-    background-color: var(--background-color2);
-}
-
-header > .left .sub2 .sub-menu  li a img {
-    margin-right: 5px;
-    width: 20px;
-}
-
-header > .left .sub2 .sub-menu  li h3 {
-    font-size: 16px;
-    color: var(--color2);
-    margin-bottom: 10px;
-}
-
-header > .left .sub2 .sub-menu  li a span {
-    color: #777;
-}
-
-
-header > .left .sub2 .sub-menu > h3 {
-    color: #606880;
-    font-size: 14px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-/*  */
-
-header > .right .sub2 
-{
-    position: relative;
-}
-
-header > .right .sub2 > a {
-    color: var(--color2);
-    padding: 30px 0;
-}
-
-header > .right .sub2:hover > a {
-    color: var(--main-color);
-}
-
-header > .right .sub2 .sub-menu {
-    display: none;
-    top: 60px;
-    left: -60px;
-    white-space: nowrap;
-    position: absolute;
-    box-shadow: 1px 1px 1px 1px var(--background-color2);
-    background-color: var(--background-color);
-}
-
-header > .right .sub2:hover .sub-menu {
-    display: block;
-}
-
-header > .right .sub2 .sub-menu li {
-    margin-right: 0;
-    display: flex;
-}
-
-header > .right .sub2 .sub-menu li a {
-    padding: 15px 50px ;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    /* justify-content: space-between; */
-    color: var(--color2);
-}
-
-header > .right .sub2 .sub-menu  li:hover {
-    background-color: var(--background-color2);
-}
-
-header > .right .sub2 .sub-menu  li a img {
-    margin-right: 5px;
-    width: 20px;
-}
-
-header > .right .sub2 .sub-menu  li h3 {
-    font-size: 16px;
-    color: var(--color2);
-    margin-bottom: 10px;
-}
-
-header > .right .sub2 .sub-menu  li a span {
-    color: #777;
-}
-
-
-header > .right .sub2 .sub-menu > h3 {
-    color: #606880;
-    font-size: 14px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-/*  */
-
-header .left .left-linkes{
+header {
     display: flex;
     align-items: center;
-}
-
-header .left .left-linkes a:not(.sub-menu a)
-{
-    padding: 10px 14px;
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color2);
-}
-
-header .left .left-linkes li:first-child a i:first-child
-{
-    font-size: 18px;
-}
-
-header .left .left-linkes a i:first-child 
-{
-    margin-right: 5px;
-}
-header .left .left-linkes a i:last-child 
-{
-    margin-left: 4px;
-} 
-
-.n {
-    border-radius: 50%;
-    padding: 4px;
-    color: var(--background-color);
-    background-color: var(--color2);
-    font-size: 10px;
-}
-
-header .left .left-linkes a:hover {
-    color: var(--main-color);
+    justify-content: space-between;
+    background-color: var(--background-color);
+    width: fit-content;
+    padding: 0 20px;
 }
 
 header .left .left-linkes a i.nft 
@@ -370,52 +76,87 @@ header .left .left-linkes a i.chart
     padding: 4px;
     font-size: 11px;
 }
-
-header .right 
-{
-    color: var(--color2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+.n {
+    border-radius: 50%;
+    padding: 4px;
+    color: var(--background-color);
+    background-color: var(--color2);
+    font-size: 10px;
 }
-
-header .right .left
-{
+header .left {
     display: flex;
     align-items: center;
 }
-
-header .right-linkes
-{
-    display: flex;
-    align-items: center;
-}
-
-
-header .right .exchange {
+header .left > .exchange {
     display: flex;
     margin-left: 20px;
 }
 
-header .right .exchange span
+header .left > .exchange span
 {
     height: fit-content;
     padding: 5px 10px;
     border: 1px solid var(--main-color);
     cursor: pointer;
+    color: var(--color2);
 }
 
-header .right .exchange span.active
+header .left > .exchange span.active
 {
     background-color: var(--main-color);
     color: var(--background-color);
 }
 
-header .right .left  img {
-    width: 80px;
-    height: 20px;
+header .left ul.linkes {
+    display: flex;
+    align-items: center;
 }
+
+header .left ul.linkes > li > a {
+    transition: 0.4s;
+    padding: 25px 10px;
+    color: var(--color2);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+header .left ul.linkes >  li > a i {
+    margin-right: 3px;
+}
+header .left ul.linkes >  li:hover > a {
+    color: var(--main-color);
+}
+header .left img {
+    width: 80px;
+}
+
+header .right > ul {
+    display: flex;
+    align-items: center;
+}
+
+header .right ul.linkes > li a {
+    color: var(--color2);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+}
+header .right ul.linkes > li {
+    padding: 25px 10px;
+    color: var(--color2);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.fa-caret-down {
+    margin-left: 3px;
+}
+
 header .right ul img {
     width: 20px;
     border-radius: 50%;
@@ -423,18 +164,121 @@ header .right ul img {
 
 }
 
-header .right ul.right-linkes li 
-{
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
+header .right ul.linkes >  li:hover a:not(.sub-menu a)  {
+    color: var(--main-color);
     cursor: pointer;
 }
-header .right ul.right-linkes li i
-{
-    margin-left: 5px;
+
+/*  */
+/* sub-menus */
+header  .sub .sub-menu {
+    display: none;
+    position: absolute;
+    background-color:var(--background-color);
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 1px 1px 3px 5px var(--background-color2);
+    z-index: 10000000;
 }
-header .right .right-linkes li.bars {
+
+header  .sub .sub-menu ul {
+    width: calc(100% / 3);
+}
+
+
+header   .sub:hover .sub-menu {
+    display: flex;
+}
+
+header .sub-menu  li a {
+    padding:15px 40px 15px 10px;
+    display: flex;
+    align-items: flex-start;
+    width: 300px;
+
+}
+
+header  .sub-menu .exchange li:hover {
+    background-color: var(--background-color2);
+}
+
+header   .sub-menu  li a img {
+    margin-right: 10px;
+    width: 25px;
+}
+
+header   .sub-menu .exchange li h3 {
+    font-size: 16px;
+    color: var(--color2);
+    margin-bottom: 10px;
+}
+
+header   .sub-menu .exchange li a span {
+    color: #777;
+    font-size: 14px;
+}
+
+
+header   .sub-menu .exchange > h3 {
+    color: #606880;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+
+header  .sub2 .sub-menu {
+    display: none;
+    position: absolute;
+    box-shadow: 1px 1px 3px 5px var(--background-color2);
+    background-color: var(--background-color);
+    padding: 20px;
+    z-index: 1000000;
+}
+
+header  .sub2:hover .sub-menu {
+    display: block;
+}
+
+
+header  .sub2 .sub-menu li a {
+    padding: 15px 40px 15px 10px ;
+        display: flex;
+    align-items: flex-start;
+    width: 300px;
+}
+
+header  .sub2 .sub-menu  li:hover {
+    background-color: var(--background-color2);
+}
+
+header  .sub2 .sub-menu  li h3 {
+    font-size: 16px;
+    color: var(--color2);
+    margin-bottom: 10px;
+}
+
+header  .sub2 .sub-menu  li a span {
+    color: #777;
+    font-size: 14px;
+}
+
+
+header  .sub2 .sub-menu > h3 {
+    color: #606880;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* sub menus */
+header .right ul li.search-mobile {
+    display: none;
+}
+
+header .right .linkes li.bars {
     display: none;
 }
 
@@ -442,8 +286,18 @@ header .right li.profile i {
     display: none;
 }
 
+
+
 header .right ul.right-linkes li.search-mobile {
     display: none;
+}
+@media (min-width: 1600px) {
+    header {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
 }
 
 .mobile-menu {
@@ -1024,10 +878,19 @@ aside .exchange-mobile {
 }
 .content .coins .table .left .heading .icons {
     margin-left: 8px;
+    display: flex;
+    align-items: center;
 }
 .content .coins .table .left .heading .icons i {
     display: block;
     cursor: pointer;
+}
+.content .coins .table .left .heading .icons i:hover {
+    color: var(--main-color);
+}
+
+.content .coins .table .left .heading .icons i:first-child {
+    margin-right: 3px;
 }
 
 .content .coins .table .left .table-cont {
@@ -1085,6 +948,11 @@ aside .exchange-mobile {
 .content .coins .table .left .table-cont .row .coin h3 {
     color: var(--color2);
 }
+
+.content .coins .table .left .table-cont .row h3.apr span {
+    color: #17e6a1;
+}
+
 .content .coins .table .left .table-cont .row .coin .coin-name span {
     font-size: 12px;
     color: rgba(119, 119, 119, 0.774);
@@ -1096,7 +964,7 @@ aside .exchange-mobile {
 
 .content .coins .table .right .heading {
     padding: 0 15px;
-    height: 54px;
+    height: 44px;
     display: flex;
     align-items: center;
     background-color: var(--background-color2);
